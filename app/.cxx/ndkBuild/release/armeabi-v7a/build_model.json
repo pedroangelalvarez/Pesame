@@ -1,0 +1,60 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame",
+      "sdkFolder": "C:\\Users\\Usuario\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app",
+      "makeFile": "C:\\Users\\Usuario\\AndroidStudioProjects\\Pesame\\app\\src\\main\\jniLibs\\OpenCV.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\.cxx",
+      "cxxFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx",
+      "ndkFolder": "C:\\Users\\Usuario\\AppData\\Local\\Android\\Sdk\\ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "release",
+    "soFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\build\\intermediates\\ndkBuild\\release\\lib",
+    "objFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local",
+    "jsonFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\ndkBuild\\release",
+    "gradleBuildOutputFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\cxx\\release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 23,
+  "cxxBuildFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a",
+  "jsonFile": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\cxx\\release\\armeabi-v7a",
+  "objFolder": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a",
+  "buildCommandFile": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\build_command.txt",
+  "buildOutputFile": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\build_output.txt",
+  "modelOutputFile": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\build_model.json",
+  "jsonGenerationLoggingRecordFile": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\json_generation_record.json",
+  "compileCommandsJsonFile": "C:\\Users\\Usuario\\StudioProjects\\Pesame\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\compile_commands.json"
+}
