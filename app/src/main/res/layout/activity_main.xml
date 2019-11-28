@@ -35,8 +35,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
+        android:src="@android:drawable/ic_menu_camera"
         app:backgroundTint="@android:color/black"
-        android:src="@drawable/ic_camera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -56,15 +56,13 @@
         app:layout_constraintStart_toStartOf="parent">
 
 
-
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnReject"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
             app:backgroundTint="@color/rejectedRed"
-            android:src="@drawable/ic_close"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -73,9 +71,9 @@
             android:id="@+id/btnAccept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
             android:layout_marginStart="20dp"
-            android:src="@drawable/ic_check"
+            android:layout_weight="0.5"
+            android:src="@android:drawable/ic_menu_send"
             app:backgroundTint="@color/acceptedGreen"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
