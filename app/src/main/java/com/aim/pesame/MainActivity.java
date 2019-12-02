@@ -33,6 +33,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
 import org.opencv.core.Mat;
@@ -57,6 +59,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageCapture imageCapture;
     ImageAnalysis imageAnalysis;
     Preview preview;
+
+    Mat mRgba;
+    Mat mGray;
 
     FloatingActionButton btnCapture, btnOk, btnCancel;
 
@@ -210,7 +215,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Utils.bitmapToMat(bitmap, mat);
 
 
-                        Imgproc.cvtColor(mat, mat, currentImageType);
+                        //Imgproc.cvtColor(mat, mat, currentImageType);
+                        Mat matgray = new Mat();
+                        Imgproc.cvtColor(matgray, matgray, Imgproc.COLOR_RGB2GRAY);
+
+                        FindPeople(matgray.getNativeObjAddr(),mat.getNativeObjAddr());
+                        //mat = performFindPeople();
+
                         Utils.matToBitmap(mat, bitmap);
                         runOnUiThread(new Runnable() {
                             @Override
@@ -220,12 +231,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         });
 
                     }
+
+                    /*private Mat performFindPeople(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
+                        mRgba = inputFrame.rgba();
+                        mGray = inputFrame.gray();
+                        FindPeople(mGray.getNativeObjAddr(), mRgba.getNativeObjAddr());
+                        return mRgba;
+                    }*/
                 });
 
 
         return imageAnalysis;
 
     }
+
+
+
+
+
+
 
     private void showAcceptedRejectedButton(boolean acceptedRejected) {
         if (acceptedRejected) {
@@ -302,7 +326,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return true;
     }
 
-
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -330,7 +354,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @Override
     public void onClick(View v) {
@@ -358,7 +382,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+    public native void FindPeople(long matAddrGr, long matAddrRgba);
     public native String stringFromJNI();
+
 
 }
 /*
